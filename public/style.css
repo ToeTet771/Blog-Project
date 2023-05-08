@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   /* height: 150vh; */
+   background:#F6C391;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* margin: 0 3rem; */
+    background: #FFFAF4;
+}
+
+#logo{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #D25380;
+}
+
+.nav-item{
+    text-decoration: none;
+    margin: 0 1.1rem;
+    color: #E08E6D;
+}
+
+.nav-item:hover{
+    color: #D25380;
+}
+
+#banner{
+    background: url(https://images.unsplash.com/photo-1683220367839-7f5be2357db8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1856&q=80);
+    background-size: cover;
+    height: 88vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#content{
+    background: #FFFAF4;
+    max-width: 500px;
+    /* text-align: center; */
+    align-self: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#content h1{
+    font-size: 3rem;
+    color: #D25380;
+    letter-spacing: 2px;
+}
+
+#wrapper{
+    max-width: 70vw;
+    align-self: center;
+    padding: 3rem;
+    background: #FFFAF4;
+    border-radius: 1rem;
+}
+
+.blog{
+    /* border: #D25380 1px solid; */
+    padding: 1rem;
+    border-bottom: 2px #D25380 dotted;
+}
+
+.contact-item label{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.contact-item input{
+    margin: 1rem 0;
+    min-width: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#contact button{
+    background: #FFFAF4;
+    color: #D25380;
+    border: #D25380 2px solid;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+}
+
+#contact button:hover{
+    background: #D25380;
+    color: #FFFAF4;
+}
+
+/* ...................................................................... */
+
+#blogContent{
+    background: #FFFAF4;
+    min-width: 80vw;
+    align-self: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+
+.blog-item label{
+    display: block;
+    font-size: 1.3rem;
+}
+
+.blog-item input{
+    margin: 1rem 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.blog-item textarea{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    margin-top: 20px;
+    border-color: #D25380;
+
+}
+textarea::-webkit-scrollbar{
+    width: 0px;
+}
+
+
+#blogInput button{
+    background: #FFFAF4;
+    color: #D25380;
+    border: #D25380 2px solid;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+}
+
+#blogInput button:hover{
+    background: #D25380;
+    color: #FFFAF4;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: #D25380;
+    align-items: center;
+}
+

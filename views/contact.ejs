@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+<%- include('./partials/nav.ejs') %>
+
+<div id="banner">
+    <div id="content">
+        <form id="contact" action="/contact" method="post">
+            <div class="contact-item">
+                <label for="email">Email</label>
+                <input type="email" name="userEmail" placeholder="type your email...">
+            </div>
+            <div class="contact-item">
+                <label for="comment">Comment</label>
+                <input type="text" name="userCmt" placeholder="type your idea...">
+            </div>           
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+
+    
+<%- include('./partials/footer.ejs') %>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<body>
+
+<%- include('./partials/nav.ejs') %>
+
+
+    <div id="banner">
+        <div id="content">
+            <h1>Release Your IDEA!</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                Et, recusandae in qui vel, voluptates,voluptatesa
+                atque iste eos adipisci sint provident quis idasd
+                unde beatae quibusdam odit? Eligendi, ipsa asdasw
+            </p>
+        </div>
+        <div id="wrapper">
+            <% if (blogObj.length < 1) { %>
+                <h2>There is no blog yet!</h2>
+                <h3>Please create one!</h3>
+            <% }else{%>
+            <% blogObj.forEach(blog => { %>
+                <div class="blog">
+                    <h3><%= blog.blogTitle %></h3>
+                    <p>
+                        <%= blog.blogBody %>
+                    </p>
+                    <a href="#">Read More</a>
+                </div>   
+            <%  })}; %>
+            
+        </div>
+    </div>
+
+   
+<%- include('./partials/footer.ejs') %>
+    
+</body>
+</html>
