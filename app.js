@@ -37,15 +37,18 @@ app.get('/about', (req,res) => {
     res.render('./about.ejs', {'titleHead': 'About'});
 });
 
-
-
-
+app.get('/:id',(req,res) => {
+    let id = req.params.id;
+    let blogItem = blogObj.find((blog) => blog.id == id);
+    res.render('./blogItem.ejs', {'titleHead': blogItem.blogTitle, blogItem});
+});
 
 
 //!method post section
 
 app.post('/blog', (req,res) =>{
     const newBlog = req.body;
+    newBlog.id = blogObj.length +1
     blogObj.push(newBlog);
     res.render('./home.ejs', {'titleHead': 'Home', blogObj});
 });

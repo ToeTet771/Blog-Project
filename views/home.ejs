@@ -23,13 +23,13 @@
                 <h2>There is no blog yet!</h2>
                 <h3>Please create one!</h3>
             <% }else{%>
-            <% blogObj.forEach(blog => { %>
+            <% blogObj.forEach((blog,i) => { %>
                 <div class="blog">
                     <h3><%= blog.blogTitle %></h3>
                     <p>
                         <%= blog.blogBody %>
                     </p>
-                    <a href="#">Read More</a>
+                    <a href="/<%= i+1 %>">Read More</a>
                 </div>   
             <%  })}; %>
             
