@@ -51,7 +51,6 @@ nav{
 #content{
     background: #FFFAF4;
     max-width: 500px;
-    /* text-align: center; */
     align-self: center;
     padding: 2rem;
     border-radius: 1rem;
@@ -64,10 +63,20 @@ nav{
 }
 
 #wrapper{
-    max-width: 70vw;
-    align-self: center;
+    margin: 50px 0;
+    max-width: 800px;
     padding: 3rem;
     background: #FFFAF4;
+    border-radius: 1rem;
+}
+
+#wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#wrapper img{
+    margin-top: 50px;
+    max-width: 500px;
     border-radius: 1rem;
 }
 
@@ -156,10 +165,21 @@ textarea::-webkit-scrollbar{
     color: #FFFAF4;
 }
 
+.blog h1 a{
+    color: #D25380;
+    text-decoration: none;
+    }
+
+.blog h1 a:hover{
+    text-decoration: underline;
+}
+
 footer{
     display: flex;
     justify-content: center;
     color: #D25380;
     align-items: center;
 }
+
+
 
